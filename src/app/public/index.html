@@ -110,13 +110,14 @@
                     item.addEventListener('click', function (e) {
                         e.preventDefault()
                         const councils = {
-                            "All": "all.html",
-                            "UnityWater": "unitywater.html",
-                            "Sunshine Coast Council": "sunshine-coast-council.html",
-                            "Moreton Bay Council": "moreton-bay-council.html"
-                        };
-                        const url = councils[this.textContent.trim()] || '#';
-                        window.location.href = url;
+                            All: 'all.html',
+                            UnityWater: 'unitywater.html',
+                            'Sunshine Coast Council':
+                                'sunshine-coast-council.html',
+                            'Moreton Bay Council': 'moreton-bay-council.html'
+                        }
+                        const url = councils[this.textContent.trim()] || '#'
+                        window.location.href = url
                         dropdownButton.textContent = this.textContent
                     })
                 })

@@ -4,7 +4,8 @@ Using Bootstrap implement the following featrues
 
 ## Features of the Page
 
-### URL 
+### URL
+
 The URL of the page is https://onlyinfo/chat
 
 ### Soft white coloured backgroup
@@ -17,7 +18,7 @@ The text inpput box is located in the centre of the page along the bottom. It wi
 
 ### Text response Area
 
-From the top of the text input box to the bottom of the drop down menu. This area will display the response from OnlyInfo in a messenger style conversation. The text that has been typed in the text input box will be in bold, whereas the text that is supplied will be in normal text. The text response will be supplied from the backend via a GET request. This will be in the form of a  JSON object, where the main key is 'response' and the value is a string of the response.
+From the top of the text input box to the bottom of the drop down menu. This area will display the response from OnlyInfo in a messenger style conversation. The text that has been typed in the text input box will be in bold, whereas the text that is supplied will be in normal text. The text response will be supplied from the backend via a GET request. This will be in the form of a JSON object, where the main key is 'response' and the value is a string of the response.
 
 ### Drop down menu
 
