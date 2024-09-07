@@ -109,15 +109,6 @@
                 dropdownItems.forEach((item) => {
                     item.addEventListener('click', function (e) {
                         e.preventDefault()
-                        const councils = {
-                            All: 'all.html',
-                            UnityWater: 'unitywater.html',
-                            'Sunshine Coast Council':
-                                'sunshine-coast-council.html',
-                            'Moreton Bay Council': 'moreton-bay-council.html'
-                        }
-                        const url = councils[this.textContent.trim()] || '#'
-                        window.location.href = url
                         dropdownButton.textContent = this.textContent
                     })
                 })
@@ -129,22 +120,33 @@
                             addResponse('You: ' + question)
                             addQuestionToSidebar(question)
                             this.value = ''
-                            setTimeout(() => {
-                                addResponse(
-                                    'OnlyInfo: This is a mock response to your question.'
-                                )
-                            }, 1000)
+                            // Send the question to the backend
+                            fetch('https://onlyinfo/chat', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({ question: question }),
+                            })
+                            .then(response => response.json())
+                            .then(data => {
+                                addResponse('OnlyInfo: ' + data.response)
+                            })
+                            .catch(error => {
+                                console.error('Error:', error)
+                                addResponse('OnlyInfo: Sorry, there was an error processing your request.')
+                            })
                         }
                     }
                 })
 
                 function addResponse(text) {
-                    let holder = 'p'
-                    if (text.slice(0, 4) === 'You:') {
-                        holder = 'b'
+                    const p = document.createElement('p')
+                    if (text.startsWith('You:')) {
+                        p.innerHTML = '<b>' + text + '</b>'
+                    } else {
+                        p.textContent = text
                     }
-                    const p = document.createElement(holder)
-                    p.textContent = text
                     responseArea.appendChild(p)
                     responseArea.scrollTop = responseArea.scrollHeight
                 }
@@ -155,13 +157,28 @@
                     li.textContent = question
                     li.addEventListener('click', function () {
                         // Open a new window with the question and response
-                        const newWindow = window.open('', '_blank')
-                        newWindow.document.write('<h2>Question:</h2>')
-                        newWindow.document.write('<p>' + question + '</p>')
-                        newWindow.document.write('<h2>Response:</h2>')
-                        newWindow.document.write(
-                            '<p>This is a mock response to the question.</p>'
-                        )
+                        const newWindow = window.open('https://onlyinfo/chat', '_blank')
+                        newWindow.onload = function() {
+                            newWindow.document.write('<h2>Question:</h2>')
+                            newWindow.document.write('<p>' + question + '</p>')
+                            newWindow.document.write('<h2>Response:</h2>')
+                            // Fetch the response for this question
+                            fetch('https://onlyinfo/chat', {
+                                method: 'POST',
+                                headers: {
+                                    'Content-Type': 'application/json',
+                                },
+                                body: JSON.stringify({ question: question }),
+                            })
+                            .then(response => response.json())
+                            .then(data => {
+                                newWindow.document.write('<p>' + data.response + '</p>')
+                            })
+                            .catch(error => {
+                                console.error('Error:', error)
+                                newWindow.document.write('<p>Sorry, there was an error retrieving the response.</p>')
+                            })
+                        }
                     })
                     questionList.appendChild(li)
                 }
