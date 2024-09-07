@@ -1,4 +1,5 @@
 # Data Model
+
 There are 3 tables which split our data into there respective challenges, that being Sunshine Coast Council, Moreton Bay Council and Unity Water.
 
 Of the data we will use for each challenge we aim to answer `1-3` questions for this prototype by generating a relevant response through the addition of context given by each of the repective datasets. This will allow each response to be tailored to the most current data available.
