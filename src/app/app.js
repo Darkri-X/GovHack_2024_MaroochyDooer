@@ -14,4 +14,4 @@ const firebase = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebase);
