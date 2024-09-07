@@ -26,3 +26,5 @@ The Drop down menu is located along to top of the page. In the Top Right corner.
 ### Side Bar
 
 The Side bar will be a small icon in the top left of the page. Once clicked it will open a side bar which has a small escape icon. This will be a small window that will be 20% the width of the screen. It will be located on the left side of the screen. Pushing everything else to the to right. The side bar will have a list of all the questions that have been asked. The instance of each question will be saved. When a question is clicked it will open a new window of OnlyInfo that will display the instance of the question and the response.
+
+# JETT
