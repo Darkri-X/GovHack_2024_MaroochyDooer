@@ -36,9 +36,9 @@ Plot the data to show the change in water quality over time.
 
 Prompt `ChatGPT` to give a brief summary of the data. and some context to what the data may mean. This may include:
 
-- Explain what `water quality` is and how it is measured.
-- give a brief breakdown of how to read this particular graph.
-- Tips on how to reduce your personal impact on the environment/water quality.
+-   Explain what `water quality` is and how it is measured.
+-   give a brief breakdown of how to read this particular graph.
+-   Tips on how to reduce your personal impact on the environment/water quality.
 
 ## Moreton Bay Council
 
