@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
     display: flex;
@@ -48,11 +48,15 @@ body {
     display: block;
 }
 
-.total-input-area {
+.container {
     display: block;
-    background-color: #fff;
 }
 
+.large-container {
+    display: block;
+    margin: auto;
+    background-color: #000000;
+}
 
 
 .chat-area {
@@ -60,13 +64,18 @@ body {
     overflow-y: auto;
     padding: 20px;
     background-color: #fff;
+    width: 60%;
+    margin: auto;
+
 }
 
 .input-area {
     display: flex;
     padding: 20px;
-    background-color: #ad3d3d;
+    background-color: #fff;
     width: 60%;
+    margin: auto; 
+    
 }
 
 #user-input {

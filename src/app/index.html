@@ -9,7 +9,7 @@
 
 </head>
 <body>
-
+    <div>
         <div class="dropdown">
             <button class="dropbtn">All</button>
             <div class="dropdown-content">
@@ -19,18 +19,19 @@
                 <a href="#">Moreton Bay Council</a>
             </div>
         </div>
+    </div>
 
 
     <div class="chat-area" id="chat-area"></div>
 
-    <div class="total-input-area">
-        <div class="input-area">
-            <input type="text" id="user-input" placeholder="Ask a question">
-            <button onclick="sendMessage()">Send</button>
+        <div>
+            <div class="container">
+                <div class="input-area">
+                    <input type="text" id="user-input" placeholder="Ask a question">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
         </div>
-    </div>
-
-
 
     <script>
         function sendMessage() {
