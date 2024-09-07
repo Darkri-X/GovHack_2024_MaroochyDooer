@@ -24,7 +24,7 @@ Soil Moisture Sensor
 
 ## R712 Environmental Monitoring
 
-temp  humidity
+temp humidity
 
 ## Milesight Occupancy Counter
 
