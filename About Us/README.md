@@ -3,6 +3,7 @@ We are all students of the Sunshine Coast University based out of the Sunshine C
 
 
 ## Meet the Team
+![alt text](Images/teamshot_all_standing.jpg "Team Photo")
 ### Jett May
 #### Background
 1st Year Computer Science Student
