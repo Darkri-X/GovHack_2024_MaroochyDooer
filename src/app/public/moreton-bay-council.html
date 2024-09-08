@@ -129,15 +129,24 @@
                             addResponse('You: ' + question)
                             addQuestionToSidebar(question)
                             this.value = ''
-                            setTimeout(() => {
-                                addResponse(
-                                    'EcoInsight: This is a mock response to your question.'
-                                )
-                            }, 1000)
+                            
+                            addTimedResponse("Swimming in natural bodies of water like the North Pine River after it has rained can sometimes be risky due to several factors that affect water quality:")
+                            addTimedResponse("Risks Associated with Swimming Post-Rain:")
+                            addTimedResponse("Increased Runoff: Rainfall can cause increased runoff from nearby lands. This runoff can carry various pollutants, including pesticides, fertilizers, oils, and other contaminants into the river, potentially degrading the water quality significantly.")
+                            addTimedResponse("Elevated Bacterial Levels: Rainwater can also flush pathogens and high levels of bacteria, like E. coli, from the urban and rural landscapes into the river. These organisms can pose health risks if ingested or if they come into contact with open wounds.")
+                            addTimedResponse("Turbidity and Debris: Heavy rains often result in higher turbidity, which means the water becomes murkier due to stirred up sediment. This can not only affect the health of aquatic life but can also obscure hidden dangers like rocks or debris that might cause physical injuries.")
                         }
                     }
                 })
 
+
+
+                
+                function addTimedResponse(text) {
+                    setTimeout(() => {
+                        addResponse(text)
+                    }, 1000)
+                }
                 function addResponse(text) {
                     let holder = 'p'
                     if (text.slice(0, 4) === 'You:') {
