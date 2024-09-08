@@ -129,14 +129,27 @@
                             addResponse('You: ' + question)
                             addQuestionToSidebar(question)
                             this.value = ''
-                            setTimeout(() => {
-                                addResponse(
-                                    'EcoInsight: This is a mock response to your question.'
-                                )
-                            }, 1000)
+                            
+                            addTimedResponse('Given the data points provided and the question regarding how water quality in the North Pine river has changed between July 2018 and July 2023, an analysis of the key parameters over time would provide insights into trends and significant changes. The data from a single day in July 2018 indicates some variations in water quality parameters within a few hours. To analyze changes over a five-year span effectively, you would need similar data points across this period.')
+                            addTimedResponse('For a robust analysis of water quality changes, consider these aspects:')
+                            addTimedResponse("Trend Analysis: Examine trends in critical parameters such as Temperature, Dissolved Oxygen, pH, and others across multiple years. An increase or decrease in these values can indicate changes in the river's ecosystem health. Seasonal Variability: Consider the time of year as environmental factors can vary seasonally, affecting readings like temperature and dissolved oxygen levels. Outlier Identification: Identify any data points that deviate significantly from the average values, which might indicate pollution events or changes in river conditions. Safety Tips Related to Water Quality Testing in Rivers:")
+                            addTimedResponse("Wear Proper Safety Gear: Always wear appropriate safety gear such as gloves, goggles, and boots when collecting water samples to protect against potential contaminants and slippery conditions.")
+                            addTimedResponse("Awareness of Surroundings: Be aware of the river's flow and weather conditions while collecting samples. Sudden weather changes or strong currents can pose serious risks.")
+                            addTimedResponse("Proper Handling and Storage of Samples: Ensure samples are collected in clean, contamination-free containers and stored properly (often refrigerated) to prevent alteration of water quality before analysis.")
                         }
                     }
                 })
+
+                
+                function addTimedResponse(text) {
+                    setTimeout(() => {
+                        addResponse(text)
+                    }, 1000)
+                }
+
+
+
+
 
                 function addResponse(text) {
                     let holder = 'p'
