@@ -9,26 +9,28 @@
 
 #### Project Description
 
--   **Project Title:**
--   **Objective:** [What your project aims to achieve]
+-   **Project Title:** ECOInsight
+-   **Objective:** [Leveraging data to give a more tailored and relavent response to already powerful tools by collaborating between government bodies, local business, and public working together to build a sustainable future for QLD and it's ecosystem.]
 -   **Description:** [A short description outlining how the data has been reused and the purpose of the project]
 -   **Data Story:** [Narrative on your data utilization and project significance]
 -   **Image:** [Upload an image/logo that captures your concept]
 
 #### Challenges Entered
 
--   [List all state/territory, national, and international challenges entered]
+-   Moreton Bay Greening as We Grow (QLD)
+-   Smart Infrastructure for data-driven decision making
+-   Collaborative Intelligence for Clean Water
 
 #### Data Utilization
 
--   **Datasets Used:** [List all datasets with links, highlighting any official datasets required for eligibility]
+-   **Datasets Used:** [Unitywater - Collaborative Intelligence for Clean Waters, Sugar Bag Road Recreation Reserve Alpha X Object Counter, Redcliffe Weather Station Data, Unitywater - Collaborative Intelligence for Clean Waters]
 -   **Data Licenses:** [Specify the type of licenses under which the data is released, ensuring compliance with competition rules]
 
 #### Project Outputs
 
 -   **Code Repositories:** [GitHub](https://github.com/Darkri-X/GovHack_2024_MaroochyDooer)
 -   **Artistic Contributions:** [Link to photo library or document with project’s artistic stages]
--   **Demo/Prototype URL:** [If applicable, link to a working prototype or hosted solution]
+-   **Demo/Prototype URL:** (https://govhackmaroochydooers.web.app/)
 
 #### Video Submission
 
