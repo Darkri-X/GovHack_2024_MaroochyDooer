@@ -5,6 +5,7 @@
 -   **Team Name:** `Maroochydooer`
 -   **Team Members:** _Jett May, Rodger Christensen, Quintan Turner_
 -   **Hackerspace Team Project URL:** https://github.com/Darkri-X/GovHack_2024_MaroochyDooer
+-   **ECOInsight URL:** https://govhackmaroochydooers.web.app/
 
 #### Project Description
 
