@@ -34,7 +34,7 @@
 
 #### Video Submission
 
--   **Video Link:** [URL to the video demonstrating the hack (max 3 minutes)]
+-   **Video Link:** [https://youtu.be/dtouBi9R0Cc]
 -   **Video Description:** [Brief explanation of what the video showcases]
 
 #### Licensing and Open Source Compliance
