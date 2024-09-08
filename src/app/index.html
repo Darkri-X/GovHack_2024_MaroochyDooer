@@ -121,7 +121,7 @@
                             addQuestionToSidebar(question)
                             this.value = ''
                             // Send the question to the backend
-                            fetch('https://onlyinfo/chat', {
+                            fetch('https://ecoinsight/chat', {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json',
@@ -130,11 +130,11 @@
                             })
                             .then(response => response.json())
                             .then(data => {
-                                addResponse('OnlyInfo: ' + data.response)
+                                addResponse('EcoInsight: ' + data.response)
                             })
                             .catch(error => {
                                 console.error('Error:', error)
-                                addResponse('OnlyInfo: Sorry, there was an error processing your request.')
+                                addResponse('EcoInsight: Sorry, there was an error processing your request.')
                             })
                         }
                     }
@@ -157,13 +157,13 @@
                     li.textContent = question
                     li.addEventListener('click', function () {
                         // Open a new window with the question and response
-                        const newWindow = window.open('https://onlyinfo/chat', '_blank')
+                        const newWindow = window.open('https://ecoinsight/chat', '_blank')
                         newWindow.onload = function() {
                             newWindow.document.write('<h2>Question:</h2>')
                             newWindow.document.write('<p>' + question + '</p>')
                             newWindow.document.write('<h2>Response:</h2>')
                             // Fetch the response for this question
-                            fetch('https://onlyinfo/chat', {
+                            fetch('https://ecoinsight/chat', {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json',
