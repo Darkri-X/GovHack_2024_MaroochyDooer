@@ -24,6 +24,10 @@ From the `Sunshine Coast Council` dataset we will use the `Maroochy River` datas
 
 Filter the `Maroochy River` dataset to only include water quality data.
 
+##### Water Quality Factors
+
+Within the unity water dataset we take `factor1`, `factor2`, `factor3` and `factor n` to provide extra context to the Model for response tailoring. These factors are extracted from the initial response as seen in `1.` and `2.` and then related to `columns` of the target dataset. Finally the database is queried to find the relevant data.
+
 #### 3. Context Filter `Between July 2019 and July 2020`
 
 **Prompt:** _How has the water quality changed at the Maroochy river `between July 2019 and July 2020`?_
