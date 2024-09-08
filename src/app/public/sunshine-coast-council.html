@@ -129,14 +129,30 @@
                             addResponse('You: ' + question)
                             addQuestionToSidebar(question)
                             this.value = ''
-                            setTimeout(() => {
-                                addResponse(
-                                    'EcoInsight: This is a mock response to your question.'
-                                )
-                            }, 1000)
+                            
+                            addTimedResponse('Based on the provided data points:')
+                            addTimedResponse('F5 - carsLeft/Up: 553 cars')
+                            addTimedResponse('F6 - carsRight/Down: 327 cars')
+                            addTimedResponse('This indicates a high level of vehicle traffic near Sugar Bag Road around 4pm, with a total of 880 cars passing in both directions. Given this amount of traffic, it might not be the most peaceful or safe time to walk your dog, especially if your dog is sensitive to noise or you are concerned about safety with many cars around.')
+                            addTimedResponse('Best Option: It would be advisable to choose a quieter time for your walk, either earlier or later in the day when there is likely to be less traffic. Alternatively, you could look for a more secluded or pedestrian-friendly area for your walk to ensure both you and your dog have a pleasant and safe experience.')
+                
+
                         }
                     }
                 })
+
+
+
+                
+                function addTimedResponse(text) {
+                    setTimeout(() => {
+                        addResponse(text)
+                    }, 1000)
+                }
+
+
+
+
 
                 function addResponse(text) {
                     let holder = 'p'
