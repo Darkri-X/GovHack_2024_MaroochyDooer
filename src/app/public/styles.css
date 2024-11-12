@@ -9,6 +9,11 @@ body {
 .response-area {
     overflow-y: auto;
     height: calc(100vh - 150px);
+    width: 60%;
+    margin: auto;
+    background-color: #c4c8c8;
+    border-radius: 10px;
+    padding: 10px;
 }
 .sidebar {
     width: 20%;
@@ -28,4 +33,34 @@ body {
 }
 .content.active {
     margin-left: 20%;
+}
+
+.topbar-logo {
+    height: 40px;
+    width: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.text-question {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    max-width: 80%;
+    margin-left: auto;
+    text-align: right;
+    background-color: #dada93;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.text-response {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-right: 20%;
+    text-align: left;
+}
+
+.dropdown-menu-extra {
+    width: 60%;
 }

@@ -1,31 +1,19 @@
-# WebPage for OnlyInfo
-
-Using Bootstrap implement the following featrues
-
-## Features of the Page
-
-### URL
-
-The URL of the page is https://onlyinfo/chat
-
-### Soft white coloured backgroup
-
-The backgroup of the page is soft white.
-
-### Text input box
-
-The text inpput box is located in the centre of the page along the bottom. It will be 60% the width of the screen. It is a light grey that has a base text of 'Ask a question'. The corners of the text input box are rounded. The text input will be sent to the back end via a POST request. The main key will be 'question' and the value will be a string of the input text.
-
-### Text response Area
-
-From the top of the text input box to the bottom of the drop down menu. This area will display the response from OnlyInfo in a messenger style conversation. The text that has been typed in the text input box will be in bold, whereas the text that is supplied will be in normal text. The text response will be supplied from the backend via a GET request. This will be in the form of a JSON object, where the main key is 'response' and the value is a string of the response.
-
-### Drop down menu
-
-The Drop down menu is located along to top of the page. In the Top Right corner. It automatically displays the current option that is selected, This will initiall be 'All'. Once clicked the menu will drop down and display the following options: UnityWater, Sunshine Coast Council, Moreton Bay Council. Once another option is selected the menu will now display the new option.
-
+# Webpage for EcoInsight
+Use bootstrap to implement the following features.
+The data is selected from the .jsfile that is already in the folder './data.js'. This cannot be accessed via the fetch function, and can only be accessed locally.
+data.json is designed so that there is a dictionary of dictionaries of lists. 
+`data = {dataset: {Question: [], Answer: []}}`
+Each of these features will have its own css styling class. 
+## Features
+### Background
+The Background Should be soft white in colour. 
+### Data Selector Drop Down Menu
+This drop down menu is located in the top right of the page in the same row as the side bar button and icon. This drop down menu starts with the first dataset in the data.json, then when pressed as the option to select the other datasets. When one is selected the options go away leaving the initial menu however with the name of the selected dataset. 
+### Question Drop Down Menu
+The question drop down menu is 60% the width of the page and located at the very bottom of the page. It opens up towards the top of the screen. In a colour that is similar and compliments the off white used for the background. This dropdown menu will always display 'Questions'. When the dropdown menu is selected it will display the list of questions for the data set that has been selected by the Data Selector Drop Down Menu. Once a question is selected the Question Drop Down Menu the menu will return to its original state. The question that was selected will be printed in the text response area.
+### Text Response Area
+The text response area will extend from the top of the Question Drop Down Menu to the bottom of the top row and will be 60% the width of the page. When a question is printed, the text will be right aligned and only go as far as 80% to the left of the Text Response Area. The question text will be surrounded by a message bubble so that its background is a different colour and the edges are rounded. The Answer that corresponds to the same index of the question will be selected from the answers list of that same data sets dictionary. The answer will be displayed in with left aligned text and only go as far as 80% of the way across to the right of the text response area. This text will have no background colour.  
 ### Side Bar
-
-The Side bar will be a small icon in the top left of the page. Once clicked it will open a side bar which has a small escape icon. This will be a small window that will be 20% the width of the screen. It will be located on the left side of the screen. Pushing everything else to the to right. The side bar will have a list of all the questions that have been asked. The instance of each question will be saved. When a question is clicked it will open a new window of OnlyInfo that will display the instance of the question and the response.
-
-# JETT
+The Side bar will be a small icon in the top left of the page. It has a maburger bar icon. Once clicked it will open a side bar which has a small escape icon. This will be a small window that will be 20% the width of the screen. It will be located on the left side of the screen. Pushing everything else to the to right. The side bar will have a list of all the questions that have been asked. 
+### Icon
+The icon should be in the tab, and along the top row of the with the features, it will be just to the right of the side bar button. The icon comes from the path '../components/images/QuintanIcon.png'
